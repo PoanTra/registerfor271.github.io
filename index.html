@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="svn.css">
+    <link rel="icon" type="image/x-icon" href="logo2.png"> 
+</head>
+<body>
+    <div class="header">
+        <div class="sidebar">
+            <a href="#" onclick=hideSibar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="https://cleeducation.com/">HOME</a>
+            <a href="https://cleeducation.com/">ABOUT</a>
+            <a href="https://t.me/cle271">CONTACT US</a>
+        </div>
+        <div class="menu">
+            <a href="#"><img src="logo.png" alt=""></a>
+            <a href="https://cleeducation.com/" class="hideOnMobile">HOME</a>
+            <a href="https://cleeducation.com/" class="hideOnMobile">ABOUT</a>
+            <a href="https://t.me/cle271" class="hideOnMobile">CONTACT US</a>
+            <a href="#" class="menu-btn" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </div>
+    </div>
+    <section class="contianer">
+        <header></header>
+        <form action="#" class="form" id="form">
+            <h1>សាខាសុវណ្ណា</h1>
+            <div class="input-box-Neme-kh-eng">
+                <label for="#">ឈ្មោះជាអក្សរខ្មែរ</label>
+                <input type="text" placeholder="Enter name in khmer" id="text_Nkhmer"> 
+            </div>
+            <div class="input-box-Neme-kh-eng">
+                <label for="#">ឈ្មោះជាអក្សរឡាតាំង</label>
+                <input type="text" placeholder="Enter name in english" id="text_Nenglish"> 
+            </div>
+            <div class="select-sex">
+                <div class="Sex">
+                <label for="#">ភេទ</label>
+                <select name="sex" id="sex">
+                    <option value="Please select">Please select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                </div>
+                <div class="date">
+                    <label for="#">ថ្ងៃ/ខែ/ឆ្នាំកំណើត</label>
+                    <input type="date" id="birthday">
+                </div>
+            </div>
+
+            <div class="input-box-PhoneNum">
+                <label for="#">លេខទូរសព្ទ</label>
+                <input type="text" placeholder="Enter phone number" id="text_PhoneNum"> 
+            </div>
+
+            <hr>
+
+            <div class="NewOrOld-class">
+                <div class="NewOrOld">
+                    <label for="#">ជាសិស្ស</label>
+                    <select name="NewOrOld" id="NewOrOld">
+                        <option value="">Please select</option>
+                        <option value="ថ្មី">សិស្ស​ ថ្មី</option>
+                        <option value="ចាស់">សិស្ស ចាស់</option>
+                    </select>
+                </div>
+                <div class="Class">
+                    <label>សិក្សានៅថ្នាក់</label>
+                    <select name="class" id="class">
+                        <option value="">Please select</option>
+                        <option>ផ្ទាល់</option>
+                        <option>អនឡាញ</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            <div class="Language">
+                <div class="lg">
+                <label for="#">រៀនភាសា</label>
+                <select name="Language" id="Language">
+                    <option value="">Please select</option>
+                </select>
+                </div>
+                <div class="Level">
+                    <label for="#">កម្រិតសិក្សា</label>
+                    <select name="level" id="level">
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+                <div class="Term">
+                    <label for="#">វគ្គសិក្សា</label>
+                    <select name="term" id="term">
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+            </div>
+  
+            <div class="Shift">
+                <div class="Day">
+                    <label for="#">វេនសិក្សា</label>
+                    <select name="day" id="day">
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+                <div class="Time">
+                    <label for="#">ម៉ោងសិក្សា</label>
+                    <select name="time" id="time">
+                        <option value="">Please select</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <hr>
+
+
+                <div class="select-study-at">
+                    <label for="#">គ្រឹះស្ថានផ្សេងដែលកំពុងសិក្សា</label>
+                    <select name="school" id="school">
+                        <option value="">Please select</option>
+                        <option >សកលវិទ្យាល័យ ពុទ្ធិសាស្រ្ត (UP)</option>
+                        <option >សកលវិទ្យាល័យ អន្តរជាតិ (IU)</option>
+                        <option >សកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល(UHS)</option>
+                        <option >វិទ្យាស្ថានវិទ្យាសាស្ត្រសុខាភិបាល ខ.ភ.ម (ISS)</option>
+                        <option >សកលវិទ្យាល័យន័រតុន (NU)</option>
+                        <option >សកលវិទ្យាល័យចេនឡា (CU)</option>
+                        <option >វិទ្យាស្ថានបច្ជេកវិទ្យាកម្ពុជា​ (ITC)</option>
+                        <option >សកលវិទ្យាល័យភូមិន្ទនីតិសាស្ត្រនិងវិទ្យាសាស្ត្រសេដ្ធកិច្ច (RULE)</option>
+                        <option >សកលវិទ្យាល័យ ភូមិន្ទភ្នំពេញ (RUPP)</option>
+                        <option >សកលវិទ្យាល័យភូមិន្ទកសិកម្ម (RUA)</option>
+                        <option >សកលវិទ្យាល័យ ភ្នំពេញ (UC)</option>
+                    </select>
+                </div>
+                <div class="year-skill">
+                    <div class="skill">
+                        <label for="#">ជំនាញ</label>
+                        <input type="text" id="skill" placeholder="Text">
+                    </div>
+                    <div class="year">
+                        <label for="#">ឆ្នាំទី</label>
+                        <input type="text" id="year" placeholder="Year">
+                    </div>
+                </div>
+                <div class="select-address">
+                    <label for="#">ទីលំនៅបច្ចុប្បន្ន</label>
+                    <select name="address" id="address">
+                        <option >Please select</option>
+                        <option >ខណ្ឌ៧មករា</option>
+                        <option >ខណ្ឌទួលគោក</option>
+                        <option >ខណ្ឌមានជ័យ</option>
+                        <option >ខណ្ឌដង្កោ</option>
+                        <option >ខណ្ឌពោធិ៍សែនជ័យ</option>
+                        <option >ខណ្ឌច្បារអំពៅ</option>
+                        <option >ខណ្ឌជ្រោយចង្វារ</option>
+                        <option >ខណ្ឌព្រែកព្នៅ</option>
+                        <option >ខណ្ឌឬស្សីកែវ</option>
+                        <option >ខណ្ឌចំការមន</option>
+                        <option >ខណ្ឌសែនសុខ</option>
+                        <option >ខណ្ឌដូនពេញ</option>
+                    </select>
+                </div>
+
+                    <div class="btn" >
+                        <button onclick=hidebtn() type="submit" id="mySubmit">ចុចទីនេះដើម្បីចុះឈ្មោះ</button>
+                    </div>
+            </form>
+            <p class="intro">បន្ទាប់ពីបានបំពេញព័ត៌មានខាងលើរួចរាល់ហើយ 
+                សូមចុចប៊ូតុង COPY រួចចុចប៊ូតុងពាក្យ 
+                Telegram ដើម្បីផ្ញើព័ត៌មានទាំងអស់
+                ខាងលើនេះទៅកាន់ក្រុមការងារ។</p>
+            <p id="output1"></p>
+            <div class="copy1">
+                <button onclick="copyText()" id="copyjs" class="copyy">
+                    <ion-icon name="copy-outline"></ion-icon>
+                    <span>Copy</span>
+                </button>
+                <button class="copyyy">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
+                    <a href="https://t.me/cle271">Telegram</a>
+                </button>
+            </div>
+    </section>
+    
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="svn.js"></script>
+</html>

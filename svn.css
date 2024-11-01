@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+label{
+    font-family: "Khmer OS Battambang";
+}
+option{
+    font-family: "Khmer OS Battambang";
+}
+
+body{
+    background-color: #efecec;
+    min-height: 100%;
+}
+
+.header{
+    background-color: #004aad;
+}
+
+.header .menu{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+img{
+    width: 200px;
+}
+.menu a:first-child{
+        margin-right: auto;
+}
+
+.menu a{
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/*menu incon click is here*/
+.menu a:hover{
+    background-color: rgba(180, 178, 178, 0.377);
+}
+.menu .menu-btn{
+    display: none;
+    padding-top: 10px;
+}
+
+/*sidebar for mobile is here*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    z-index:999;
+    background-color: #004bad91;
+    backdrop-filter:blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.sidebar a:hover{
+    background-color: rgba(180, 178, 178, 0.377);
+}
+
+
+@media(max-width: 730px){
+    .menu .hideOnMobile{
+        display:none;
+    }
+    .menu .menu-btn{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .header{
+        width: 400px;
+    }
+}
+
+/*form start here*/
+.form{
+    width: 400px;
+    background-color: #f6e0ae9a;
+    margin:auto;
+    border-radius: 8px;
+    padding: 10px 10px;
+    box-shadow: 0 0 5px #000;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.contianer header{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #033270;
+}
+
+/*design for select is here */
+.select-sex{
+    display: flex;
+    justify-content: space-between;
+    padding-top:10px;
+}
+.select-sex select{
+    width: 100%;
+    height: 40px;
+}
+.select-sex .Sex{
+    width: 40%;
+}
+.select-sex .date{
+    width: 55%;
+}
+
+.select-study-at select{
+    width: 100%;
+    height: 40px;
+}
+.select-address select{
+    width: 100%;
+    height: 40px;
+}
+.year-skill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.year-skill .year{
+    width: 30%;
+}
+.year-skill .skill{
+    width: 65%;
+}
+
+
+/*Input text is here*/
+input{
+    position: relative;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+
+}
+select{
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+/*input space top is here*/
+.input-box-Neme-kh-eng{
+    padding-top:15px;
+}
+.input-box-PhoneNum{
+    padding-top:15px; 
+}
+.year-skill{
+    padding-top:15px;  
+}
+.select-address{
+    padding-top:15px; 
+}
+
+.NewOrOld-class{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.NewOrOld-class select{
+    width: 100%;
+    height: 40px;
+}
+.NewOrOld-class .NewOrOld{
+    width: 50%;
+}
+.NewOrOld-class .Class{
+    width: 45%;
+}
+
+.Language{
+    display: flex;
+    justify-content: space-between;
+    padding-top:15px;
+}
+.Language select{
+    width: 100%;
+    height: 40px;
+}
+.Language .lg{
+    width: 32%;
+}
+.Language .Level{
+    width: 32%;
+}
+.Language .Term{
+    width: 32%;
+}
+
+.Shift {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.Shift select{
+    width: 100%;
+    height: 40px;
+}
+.Shift .Day{
+    width: 40%;
+}
+.Shift .Time{
+    width: 55%;
+}
+
+
+hr{
+    margin: 20px 0; 
+    border: 1px solid #000;
+}
+
+.btn{
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+.btn button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    background:#004bad;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Khmer OS Battambang";
+}
+.btn button:hover{
+    background:#004badb5;
+}
+h1{
+    text-align: center;
+    font-family: "Khmer OS Battambang";
+}
+.intro{
+    text-align: center;
+}
+p{
+    width: 400px;
+    background-color: rgb(240, 240, 240);
+    margin:auto;
+    border-radius: 8px;
+    padding: 10px 10px;
+    box-shadow: 0 0 5px #000;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: "Khmer OS Battambang";
+}
+.copy1{
+    width: 400px;
+    margin:auto;
+    text-align: start;
+}
+.copyy{
+    background-color: #004aad;
+    margin:auto;
+    border-radius: 8px;
+    padding: 10px 10px;
+    box-shadow: 0 0 5px #333;
+    border: 1px solid #333;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color:#fff;
+    cursor: pointer;
+}
+.copyy:active{
+    background:  #004bad96;
+}
+.copy1 .copyyy{
+    margin-left: 20px;
+}
+.copyyy{
+    background-color: #004aad;
+    margin:auto;
+    border-radius: 8px;
+    padding: 10px 10px;
+    box-shadow: 0 0 5px #333;
+    border: 1px solid #333;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    align-items: center;
+}
+.copyyy a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.NewOrOld-class{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.NewOrOld-class select{
+    width: 100%;
+    height: 40px;
+}
+.NewOrOld-class .NewOrOld{
+    width: 50%;
+}
+.NewOrOld-class .Class{
+    width: 45%;
+}
+
+
+
+@media(max-width: 400px){
+    .form{
+        width: 350px;
+    }
+    p{
+        width: 350px;
+    }
+    .copy1{
+        width: 350px;
+    }
+}
